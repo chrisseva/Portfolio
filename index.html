@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+	<!-- navbar -->
+	<div class="col-md-12">
+        <nav class="navbar navbar-inverse navbar-fixed-top nav-color">
+            <ul class="nav navbar-nav">
+                <li><a href="#start">Start</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#latest-posts">Hire Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>       
+        </nav>
+    </div>
+	<div class="banner-background" id="start">
+		<div class="banner text-center">
+			<div class="aniava">
+				<img class="avatar" src="img/avatar.png" alt="avatar">
+			</div>
+			<hr class="hr1">
+			<h1>Chrisopher Seva</h1>
+			<h4 style="color:grey;">Web Developer</h4>
+			<div class="text-center">
+				<i class="fa fa-google-plus faicon" style="font-size: 30px; margin: 10px"></i>
+				<i class="fa fa-linkedin" style="font-size: 30px; margin: 10px"></i>
+				<a href="https://www.facebook.com/xris.seva">
+					<i class="fa fa-facebook" style="font-size: 30px; margin: 10px"></i>
+				</a>
+				<a href="https://github.com/chrisseva">
+					<i class="fa fa-github" style="font-size: 30px; margin: 10px"></i>					
+				</a>
+			</div>
+			<div style="margin-top: 15px;">
+				<div class="menu__item">
+    				<a href="#resume" class="menu__link hover10">
+    					<span class="menu__label hover10__label">Check my Resume</span>
+    				</a>
+					<a href="#portfolio" class="menu__link hover10">
+						<span class="menu__label hover10__label">Check my Work</span>
+					</a>
+  				</div>	
+			</div>
+		</div>
+	</div>
+	<div id="resume"></div>
+	<div class="container">		
+		<div class="banner-100">
+			<div class="text-center">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eum magnam consequatur rerum tenetur pariatur fuga temporibus, eaque adipisci, eos possimus totam deserunt fugiat quam repellat fugit consequuntur recusandae dolorum.</p>
+			</div>
+		</div>
+	</div>
+    
+	
+
+
+
+	<!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

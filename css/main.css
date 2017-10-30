@@ -1,12 +1,13 @@
 body {
   height: 100%;
-  /*background-color: #333;*/
+  background-color: white;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
+  color: #000;
 }
 
 .banner-background{
 	/*background: url('../img/background2.png');*/
+	color: #fff;
 	background-color: #333;
 	width: 100%;
 	height: 100vh;
@@ -39,9 +40,7 @@ body {
 	animation-duration: 2s;
 }
 
-.banner-background-red{
-	/*background-color: red;*/
-	/*width: 100%;*/
+.banner-100{
 	height: 100vh;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -60,12 +59,16 @@ body {
 	background-color: rgba(43, 43, 45, 0.);	
 }
 
+.container{
+	margin-top: 5%;
+}
+
+/*hover effect*/
 .hover10{
   position: relative;
   overflow: hidden;
   display: inline-block;
 }
-/*hover effect*/
 .hover10:before, .hover10:after, .hover10__label:before, .hover10__label:after{
   content: "";
   position: absolute;
@@ -154,6 +157,17 @@ a{
 	color: white;
 }
 /*end of effect*/
+
+.hr1{
+	width: 40%;
+	animation-name: lineone;
+	animation-duration: 2s;
+}
+.hr2{
+	width: 10%;
+	animation-name: linetwo;
+	animation-duration: 2s;
+}
 
 @keyframes lineone{
 	from{
